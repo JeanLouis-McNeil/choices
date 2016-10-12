@@ -3,6 +3,12 @@ function analyzeColor1(myColor) {
 	if (myColor == "Blue") {
 	    alert("Just like the sky!");
 	}
+	else if (myColor == "Red"){
+      	alert("Just like blood!");
+    }
+  	else if (myColor == "Green"){
+    	alert("Just like grass!");
+  }
 }
 </script>
 <h3>Favorite Color</h3>
