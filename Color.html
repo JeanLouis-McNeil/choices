@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+body {
+	background-color: blue;
+}
+h1 {
+	font-size: 30pt;
+	}
+button {
+	width: 100px;
+	height: 25px;
+	}
+</style>
+<script type="text/javascript">
+function colorGuess() {
+var color = document.getElementById('colorBox').value;
+var result;
+if (color == 'red') {
+	result = 'You are right! It is red';
+	}
+else if (color != 'red') {
+	result = 'You are wrong Bro! It is red';
+}
+else {
+	result = 'Type it without capital letter.'
+	}
+	
+	document.getElementById('colorDiv').innerHTML = result;
+	}
+</script>
+</head>
+<body>
+
+<h1 id="id1">Guess my color</h1>
+
+
+Type your guess: <input type="text" id="colorBox" size="8"><br>
+<button type="button" onclick="colorGuess()">Submit</button>
+<div id="colorDiv"></div>
+
+<button type="button"
+onclick="document.getElementById('id1').style.color = 'red'">
+Verify</button><br>
+
+</body>
+</html>
