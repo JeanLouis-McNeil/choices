@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> FingerPrint Sensor Prank</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script>
+$(document).on("pagecreate","#pageone",function(){
+  $("p").on("swipe",function(){
+    $("span").text(" Fingerprint detected! You are not the owner of the vault.");
+  });                       
+});
+</script>
+</head>
+<body>
+
+<div data-role="page" id="pageone">
+  <div data-role="header">
+    <h1>Mc Neil's Vault</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <p>Swipe in the box below to identify yourself.</p>
+    <p style="border:1px solid black;height:200px;width:200px;background-color: #000000;"></p>
+    <p><span style="color:red"></span></p>
+  </div>
+
+  <div data-role="footer">
+    <h1>Be precise.</h1>
+  </div>
+</div> 
+
+</body>
+</html>
